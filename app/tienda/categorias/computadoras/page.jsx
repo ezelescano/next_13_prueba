@@ -1,5 +1,5 @@
 const Computadoras = ()=>{
-    return <h1>Computadoras</h1>
+    return (<h1>Soy Computadoras</h1>)
 }
 
 export default Computadoras;

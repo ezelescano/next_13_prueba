@@ -1,4 +1,4 @@
-import Navbar from "../app/components/NavBar";
+import Navbar from "./components/Navbar";
 
 import {Roboto} from "next/font/google"
 export const metadata = {

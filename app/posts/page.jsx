@@ -19,9 +19,9 @@ const PostPages = async () => {
             {posts.map((post) =>(
                 <div key={post.id} >
                 <Link href={`/posts/${post.id}`}>
-                <h2>{post.title}</h2>
+                <h2>{post.id}.{post.title}</h2>                
                 </Link>
-               <PostCard post={post.body}/>
+               <PostCard post={post}/>
 
                </div>
             )) }

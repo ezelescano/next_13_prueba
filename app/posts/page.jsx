@@ -1,3 +1,4 @@
+import Link from "next/link";
 import PostCard from "../components/PostCard";
 
 const loadPosts = async () => {
@@ -16,7 +17,13 @@ const PostPages = async () => {
         <div>
             <h1>Soy el Post</h1>
             {posts.map((post) =>(
-               <PostCard post={post}/>
+                <div key={post.id} >
+                <Link href={`/posts/${post.id}`}>
+                <h2>{post.title}</h2>
+                </Link>
+               <PostCard post={post.body}/>
+
+               </div>
             )) }
 
             

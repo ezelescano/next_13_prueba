@@ -7,7 +7,7 @@ const loadPosts = async () => {
     return data;
 }
 
-const PostPages = async () => {
+const PostsPages = async () => {
 
     const posts = await loadPosts();
     console.log(posts);
@@ -33,4 +33,4 @@ const PostPages = async () => {
 
 }
 
-export default PostPages;
+export default PostsPages;
